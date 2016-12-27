@@ -3,6 +3,20 @@
 `laravel-zsh-plugin` contains short aliases for all artisan commands
 included to Laravel 5, 5.1, 5.2, 5.3 versions of framework. 
 
+## Example
+
+Without typing full artisan command in console, like:
+
+    ```console
+    $ php artisan migrate --seed
+    ```
+    
+there is more convenient alias:
+
+    ```console
+    $ amgs
+    ```
+    
 ## Installation on oh-my-zsh
 
 1. Go to `oh-my-zsh` plugins directory:
@@ -32,6 +46,7 @@ included to Laravel 5, 5.1, 5.2, 5.3 versions of framework.
 | Alias                | Command                                                                                                                                 |
 |:---------------------|:--------------------------------|
 | a                    | php artisan
+| av                   | php artisan -V
 | acc                  | php artisan clear-compiled
 | ad                   | php artisan down
 | ae                   | php artisan env
@@ -74,6 +89,7 @@ included to Laravel 5, 5.1, 5.2, 5.3 versions of framework.
 |amkau                  |php artisan make:auth
 |amkcm                  |php artisan make:command
 |amkct                  |php artisan make:controller
+|amkctr                 |php artisan make:controller -r
 |amkev                  |php artisan make:event
 |amkjb                  |php artisan make:job
 |amkls                  |php artisan make:listener
@@ -81,6 +97,7 @@ included to Laravel 5, 5.1, 5.2, 5.3 versions of framework.
 |amkmw                  |php artisan make:middleware
 |amkmg                  |php artisan make:migration
 |amkmd                  |php artisan make:model
+|amkmdm                 |php artisan make:model -m
 |amknf                  |php artisan make:notification
 |amkpl                  |php artisan make:policy
 |amkpv                  |php artisan make:provider
@@ -93,6 +110,10 @@ included to Laravel 5, 5.1, 5.2, 5.3 versions of framework.
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
 |amg                    |php artisan migrate
+|amgf                   |php artisan migrate --force
+|amgs                   |php artisan migrate --seed
+|amgp                   |php artisan migrate --pretend
+|amgt                   |php artisan migrate --env=testing
 |amgis                  |php artisan migrate:install
 |amgrf                  |php artisan migrate:refresh
 |amgrs                  |php artisan migrate:reset
