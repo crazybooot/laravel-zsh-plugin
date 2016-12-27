@@ -6,16 +6,14 @@ included to Laravel 5, 5.1, 5.2, 5.3 versions of framework.
 ## Example
 
 Without typing full artisan command in console, like:
-
-    ```console
-    $ php artisan migrate --seed
-    ```
+```console
+$ php artisan migrate --seed
+```
     
 there is more convenient alias:
-
-    ```console
-    $ amgs
-    ```
+```console
+$ amgs
+```
     
 ## Installation on oh-my-zsh
 
