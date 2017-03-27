@@ -39,7 +39,7 @@ $ amgs
 
 ## Aliases
 
-####General
+#### General
 
 | Alias                | Command                                                                                                                                 |
 |:---------------------|:--------------------------------|
@@ -72,7 +72,7 @@ $ amgs
 | acfcc                | php artisan config:cache
 | acfcl                | php artisan config:clear
 
-####Common 
+#### Common 
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
