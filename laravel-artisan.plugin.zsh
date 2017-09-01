@@ -15,6 +15,7 @@ alias ah='artisan help'
 alias ai='artisan inspire'
 alias al='artisan list'
 alias ao='artisan optimize'
+alias ap='artisan preset'
 alias as='artisan serve'
 alias at='artisan tinker'
 alias au='artisan up'
@@ -36,6 +37,7 @@ alias amkcm='art_make command'
 alias amkct='art_make controller'
 alias amkctr='art_make controller -r'
 alias amkev='art_make event'
+alias amkfc='art_make factory'
 alias amkjb='art_make job'
 alias amkls='art_make listener'
 alias amkml='art_make mail'
@@ -47,6 +49,8 @@ alias amknf='art_make notification'
 alias amkpl='art_make policy'
 alias amkpv='art_make provider'
 alias amkrq='art_make request'
+alias amkres='art_make resource'
+alias amkrl='art_make rule'
 alias amksd='art_make seeder'
 alias amkts='art_make test'
 # migrate
@@ -55,11 +59,16 @@ alias amgf='artisan migrate --force'
 alias amgs='artisan migrate --seed'
 alias amgp='artisan migrate --pretend'
 alias amgt='artisan migrate --env=testing'
+alias amgfr='artisan migrate:fresh'
 alias amgis='artisan migrate:install'
 alias amgrf='artisan migrate:refresh'
 alias amgrs='artisan migrate:reset'
 alias amgrb='artisan migrate:rollback'
 alias amgst='artisan migrate:status'
+#notifications
+alias anftb='artisan notifications:table'
+#package
+alias apd='artisan package:discover'
 # queue
 alias aqf='artisan queue:failed'
 alias aqft='artisan queue:failed-table'
@@ -83,7 +92,7 @@ alias avcl='artisan view:clear'
 
 # laravel 5.2 artisan command aliases
 
-alias amkcs='artisan make:console'
+alias amkcs='art_make console'
 
 # laravel 5.1 artisan command aliases
 
