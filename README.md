@@ -1,7 +1,7 @@
 # laravel-zsh-plugin - artisan commands aliases of Laravel 5 Framework for zsh
 
 `laravel-zsh-plugin` contains short aliases for all artisan commands
-included to Laravel 5, 5.1, 5.2, 5.3 versions of framework. 
+included to Laravel 5, 5.1, 5.2, 5.3, 5.4, 5.5 versions of framework. 
 
 ## Example
 
@@ -52,6 +52,7 @@ $ amgs
 | ai                   | php artisan inspire
 | al                   | php artisan list
 | ao                   | php artisan optimize
+| ap                   | php artisan preset
 | as                   | php artisan serve
 | at                   | php artisan tinker
 | au                   | php artisan up
@@ -89,6 +90,7 @@ $ amgs
 |amkct                  |php artisan make:controller
 |amkctr                 |php artisan make:controller -r
 |amkev                  |php artisan make:event
+|amkfc                  |php artisan make:factory
 |amkjb                  |php artisan make:job
 |amkls                  |php artisan make:listener
 |amkml                  |php artisan make:mail
@@ -100,6 +102,8 @@ $ amgs
 |amkpl                  |php artisan make:policy
 |amkpv                  |php artisan make:provider
 |amkrq                  |php artisan make:request
+|amkres                  |php artisan make:resource
+|amkrl                  |php artisan make:rule
 |amksd                  |php artisan make:seeder
 |amkts                  |php artisan make:test
 
@@ -112,12 +116,24 @@ $ amgs
 |amgs                   |php artisan migrate --seed
 |amgp                   |php artisan migrate --pretend
 |amgt                   |php artisan migrate --env=testing
+|amgfr                  |php artisan migrate:amgfr
 |amgis                  |php artisan migrate:install
 |amgrf                  |php artisan migrate:refresh
 |amgrs                  |php artisan migrate:reset
 |amgrb                  |php artisan migrate:rollback
 |amgst                  |php artisan migrate:status
 
+#### Notifications
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
+|anftb                   |php artisan notifications:table
+
+#### Package
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
+|anpd                   |php artisan package:discover
 #### Queue
 
 | Alias                 | Command                                                                                                                                 |
