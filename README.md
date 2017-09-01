@@ -133,7 +133,7 @@ $ amgs
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
-|anpd                   |php artisan package:discover
+|apd                   |php artisan package:discover
 #### Queue
 
 | Alias                 | Command                                                                                                                                 |
