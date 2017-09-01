@@ -68,7 +68,7 @@ alias amgst='artisan migrate:status'
 #notifications
 alias anftb='artisan notifications:table'
 #package
-alias anpd='artisan package:discover'
+alias apd='artisan package:discover'
 # queue
 alias aqf='artisan queue:failed'
 alias aqft='artisan queue:failed-table'
