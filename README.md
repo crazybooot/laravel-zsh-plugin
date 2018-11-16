@@ -1,7 +1,7 @@
-# laravel-zsh-plugin - artisan commands aliases of Laravel 5 Framework for zsh
+# laravel-zsh-plugin - artisan commands aliases of Laravel 5+ Framework for zsh
 
 `laravel-zsh-plugin` contains short aliases for all artisan commands
-included to Laravel 5, 5.1, 5.2, 5.3, 5.4, 5.5 versions of framework. 
+included to Laravel 5+ framework. 
 
 ## Example
 
@@ -51,12 +51,21 @@ $ amgs
 | ah                   | php artisan help
 | ai                   | php artisan inspire
 | al                   | php artisan list
-| ao                   | php artisan optimize
 | ap                   | php artisan preset
 | as                   | php artisan serve
 | at                   | php artisan tinker
 | au                   | php artisan up
+
+#### App
+
+| Alias                | Command                                                                                                                                 |
+|:---------------------|:--------------------------------|
 | aanm                 | php artisan app:name
+
+#### Auth
+
+| Alias                | Command                                                                                                                                 |
+|:---------------------|:--------------------------------|
 | aacr                 | php artisan auth:clear-resets
 
 #### Cache
@@ -64,6 +73,7 @@ $ amgs
 | Alias                | Command                                                                                                                                 |
 |:---------------------|:--------------------------------|
 | accl                 | php artisan cache:clear
+| acfg                 | php artisan cache:forget
 | actb                 | php artisan cache:table
 
 #### Config
@@ -86,10 +96,12 @@ $ amgs
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
 |amkau                  |php artisan make:auth
+|amkch                  |php artisan make:channel
 |amkcm                  |php artisan make:command
 |amkct                  |php artisan make:controller
 |amkctr                 |php artisan make:controller -r
 |amkev                  |php artisan make:event
+|amkex                  |php artisan make:exception
 |amkfc                  |php artisan make:factory
 |amkjb                  |php artisan make:job
 |amkls                  |php artisan make:listener
@@ -99,10 +111,11 @@ $ amgs
 |amkmd                  |php artisan make:model
 |amkmdm                 |php artisan make:model -m
 |amknf                  |php artisan make:notification
+|amkos                  |php artisan make:observer
 |amkpl                  |php artisan make:policy
 |amkpv                  |php artisan make:provider
 |amkrq                  |php artisan make:request
-|amkres                  |php artisan make:resource
+|amkres                 |php artisan make:resource
 |amkrl                  |php artisan make:rule
 |amksd                  |php artisan make:seeder
 |amkts                  |php artisan make:test
@@ -116,7 +129,7 @@ $ amgs
 |amgs                   |php artisan migrate --seed
 |amgp                   |php artisan migrate --pretend
 |amgt                   |php artisan migrate --env=testing
-|amgfr                  |php artisan migrate:amgfr
+|amgfr                  |php artisan migrate:fresh
 |amgis                  |php artisan migrate:install
 |amgrf                  |php artisan migrate:refresh
 |amgrs                  |php artisan migrate:reset
@@ -127,13 +140,21 @@ $ amgs
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
-|anftb                   |php artisan notifications:table
+|anftb                  |php artisan notifications:table
+
+#### Optimize
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
+| ao                    | php artisan optimize
+| aoc                   | php artisan optimize:clear
 
 #### Package
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
-|apd                   |php artisan package:discover
+|apd                    |php artisan package:discover
+
 #### Queue
 
 | Alias                 | Command                                                                                                                                 |
@@ -156,33 +177,61 @@ $ amgs
 |arcl                   |php artisan route:clear
 |arls                   |php artisan route:list
 
-
-#### Other
+#### Schedule
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
+|asfn                   |php artisan schedule:finish
 |asrn                   |php artisan schedule:run
+
+#### Session
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
 |astb                   |php artisan session:table
+
+#### Storage
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
 |asln                   |php artisan storage:link
+
+#### Vendor
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
 |avpb                   |php artisan vendor:publish
+
+#### View
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
+|avcc                   |php artisan view:cache
 |avcl                   |php artisan view:clear
 
-#### Laravel 5.2 artisan command aliases
+#### Horizon
+
+| Alias                 | Command                                                                                                                                 |
+|:----------------------|:--------------------------------|
+|ahz                    |php artisan artisan horizon
+|ahzas                  |php artisan artisan horizon:assets
+|ahzct                  |php artisan artisan horizon:continue
+|ahzls                  |php artisan artisan horizon:list
+|ahzps                  |php artisan artisan horizon:pause
+|ahzpg                  |php artisan artisan horizon:purge
+|ahzss                  |php artisan artisan horizon:snapshot
+|ahzsv                  |php artisan artisan horizon:supervisor
+|ahzsvs                 |php artisan artisan horizon:supervisors
+|ahztm                  |php artisan artisan horizon:terminate
+|ahzto                  |php artisan artisan horizon:timeout
+|ahzwk                  |php artisan artisan horizon:work
+
+#### Old framework versions commands
 
 | Alias                 | Command                                                                                                                                 |
 |:----------------------|:--------------------------------|
 |amkcs                  |php artisan make:console
-
-#### Laravel 5.1 artisan command aliases
-
-| Alias                 | Command                                                                                                                                 |
-|:----------------------|:--------------------------------|
 |ahcm                   |php artisan handler:command
 |ahev                   |php artisan handler:event
 |aqss                   |php artisan queue:subscribe
-
-#### Laravel 5.0 artisan command aliases
-
-| Alias                 | Command                                                                                                                                 |
-|:----------------------|:--------------------------------|
 |afr                    |php artisan fresh
