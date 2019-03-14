@@ -235,3 +235,8 @@ $ amgs
 |ahev                   |php artisan handler:event
 |aqss                   |php artisan queue:subscribe
 |afr                    |php artisan fresh
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.MD) for more information.
